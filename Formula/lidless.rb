@@ -1,11 +1,17 @@
 class Lidless < Formula
   desc "Keep your MacBook awake with the lid closed while Claude Code or any job runs"
   homepage "https://vitkon.github.io/lidless/"
-  url "https://github.com/vitkon/lidless/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "7bd140aefef14e7da32299e4e9f87603492bc64f78464c85481e268d228708b6"
+  url "https://github.com/vitkon/lidless/archive/refs/tags/v2.0.1.tar.gz"
+  sha256 "80754f9a41df507162073205ca446ec14a27b44967575e340c0b62ddf8e46c66"
   license "MIT"
 
-  depends_on xcode: ["15.0", :build]
+  bottle do
+    root_url "https://github.com/vitkon/lidless/releases/download/v2.0.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "da1485e9c0d7182d3e91bc9f9bb08d896ef8410a4fc38bf32cdb860877a59923"
+    sha256 cellar: :any_skip_relocation, sequoia:       "95f225131a3e6b80930f5517c15d17ed3a2afd929f26ff3938139c0c70fcb301"
+  end
+
+  depends_on xcode: ["16.0", :build]
   depends_on :macos
 
   def install
