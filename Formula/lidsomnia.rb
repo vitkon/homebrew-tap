@@ -1,14 +1,14 @@
 class Lidsomnia < Formula
   desc "Keep your MacBook awake with the lid closed while Claude Code, Codex or any job runs"
   homepage "https://vitkon.github.io/lidsomnia/"
-  url "https://github.com/vitkon/lidsomnia/archive/refs/tags/v2.2.0.tar.gz"
-  sha256 "f661ecd7e89a23bc2b6002a33ba576d888c945811d0d3d34dec0384e7a0657f3"
+  url "https://github.com/vitkon/lidsomnia/archive/refs/tags/v2.3.0.tar.gz"
+  sha256 "97b477c5280a30fa64f7db6cb4b5f451f873b2b0b41c9bc21fe4e0b61a47e15f"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/vitkon/lidsomnia/releases/download/v2.2.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "5c763a56dac83c5c6c1ab225c1d950bb6b8f7ef67310d9cc6ac8b5c7aef4f5ea"
-    sha256 cellar: :any_skip_relocation, sequoia:       "9714f3b6d88a9705aaa1f40ade3ffe84dfb43fcc9081deadd2b9d4f6cdc84526"
+    root_url "https://github.com/vitkon/lidsomnia/releases/download/v2.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "c0a5cb3215e043eb28ac8f7eb5eb9c3c93aab0b58eab42261b8cbeb7281b3bf9"
+    sha256 cellar: :any_skip_relocation, sequoia:       "411041914cfba76ddebe12efea9a3426d43a423d99ba24222f00f0152edc91d8"
   end
 
   depends_on xcode: ["16.0", :build]
